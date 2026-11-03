@@ -1,4 +1,4 @@
-"""
+﻿"""
 create_user.py - Skapar en lokal användare i Windows 11.
 
 Kräver att PowerShell körs som administratör.
@@ -56,7 +56,7 @@ def create_user(run_by):
         "New-LocalUser -Name $env:NEW_USER "
         "-Password (ConvertTo-SecureString $env:NEW_PASS -AsPlainText -Force) "
         "-PasswordNeverExpires:$false -ErrorAction Stop | Out-Null; "
-        "Add-LocalGroupMember -Group 'Users' -Member $env:NEW_USER -ErrorAction Stop"
+        "Add-LocalGroupMember -SID 'S-1-5-32-545' -Member $env:NEW_USER -ErrorAction Stop"
     )
 
     if DRY_RUN:
@@ -81,3 +81,4 @@ def create_user(run_by):
         print(f"Kunde inte skapa användaren: {message}")
         write_log("skapa_anvandare", run_by, "Misslyckades att skapa konto",
                   {"Försökt användarnamn": username, "Felmeddelande": message})
+
