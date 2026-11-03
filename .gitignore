@@ -1,0 +1,14 @@
+# Loggfiler innehåller känslig data (t.ex. lösenord) och ska aldrig ligga på GitHub.
+# Mappen logs/ behålls i repot via .gitkeep, men allt innehåll ignoreras.
+logs/*
+!logs/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editor / OS
+.vscode/
+.idea/
+Thumbs.db
