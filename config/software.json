@@ -1,0 +1,19 @@
+{
+  "_info": "Mall för mjukvara. Se README.md för hur du lägger till program och grupper.",
+  "programs": {
+    "7zip":    {"name": "7-Zip",              "winget_id": "7zip.7zip"},
+    "vscode":  {"name": "Visual Studio Code", "winget_id": "Microsoft.VisualStudioCode"},
+    "vlc":     {"name": "VLC Media Player",   "winget_id": "VideoLAN.VLC"},
+    "firefox": {"name": "Mozilla Firefox",    "winget_id": "Mozilla.Firefox"},
+    "putty":   {"name": "PuTTY",              "winget_id": "PuTTY.PuTTY"},
+    "notepadpp": {"name": "Notepad++",        "winget_id": "Notepad++.Notepad++"}
+  },
+  "groups": {
+    "grupp_1": {"description": "Bas (7-Zip, Firefox, VLC)",
+                "programs": ["7zip", "firefox", "vlc"]},
+    "grupp_2": {"description": "Bas + utveckling (7-Zip, Firefox, VS Code, Notepad++)",
+                "programs": ["7zip", "firefox", "vscode", "notepadpp"]},
+    "grupp_3": {"description": "Admin (7-Zip, Firefox, PuTTY, VS Code)",
+                "programs": ["7zip", "firefox", "putty", "vscode"]}
+  }
+}
