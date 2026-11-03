@@ -1,4 +1,4 @@
-# admin_script_it24_namn
+﻿# admin_script_it24_dylan
 
 Ett admin-skript för Windows 11 med en meny där man kan logga datorinformation, skapa lokala användare och installera mjukvara. Alla åtgärder loggas med datum, tid och vem som utförde dem.
 
@@ -30,7 +30,7 @@ Inga externa Python-bibliotek behövs, endast standardbiblioteket används (`pip
 
 ```powershell
 git clone https://github.com/dylannordstrom08-beep/admin_script_it24_dylan
-cd admin_script_it24_namn
+cd admin_script_it24_dylan
 ```
 
 ## Hur man kör programmet
@@ -66,7 +66,7 @@ Ta bort testläget med `Remove-Item Env:ADMIN_SCRIPT_DRYRUN`.
 ## Struktur
 
 ```
-admin_script_it24_namn/
+admin_script_it24_dylan/
 ├── main.py                     # Startfil: användarnamn + meny
 ├── config/
 │   └── software.json          # Program och grupper (kan redigeras)
